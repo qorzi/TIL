@@ -1,0 +1,98 @@
+git / github
+
+git : (분산) 버전 관리 프로그램
+
+github : 서비스, social coding
+
+수정-저장-애드-커밋
+
+1. git init = 현재 위치의 폴더를 버전관리가 가능하게 만들어줘 / 홈폴더에서 하면 안됨 / 최초 1회만 가장 최상위 폴더만
+2. git status = 깃의 현재 현황을 알려줘 / 
+3. git add . = 현재 폴더의 변경사항을 전부 올려줘 / 
+    
+    git add a.txt = a.txt를 올려줘
+    
+4. git config --global user.email "qorzi00@gmail.com"
+git config --global user.name "qrozi"
+git config --global --list = 현재 config를 알려줘
+5. git commit -m ‘root commit’
+6. git log = 마지막 단계의 커밋 내역을 확인
+
+---
+
+!!! git commit = 메시지 미입력시 창뜸
+
+i로 인서트 모드로  second commit 적고 esc로 나옴
+
+: wq 엔터
+
+---
+
+1. git log —oneline
+2. git chechout 해쉬값 = 해쉬값으로 돌아감
+3. git chechout master 마지막 해쉬로 돌아감
+
+---
+
+1. touch README.md
+2. touch test.md
+3. git remote add origin 주소.git
+    
+    git remote -v : 연결 됐는지 확인
+    
+    origin 주소(패치)/(푸쉬) 라고 나옴
+    
+4. git push origin master / 인증
+5. git rm —cached a.txt
+    
+    rm a.txt = add 취소
+    
+
+vscode 마우스 오른쪽 누르면 붙여넣기 들어감
+
+> 잘 만들지 말고 일단 만들고 최적화를 피드백 받아라. 많이 해보는게 중요!!
+> 
+
+cli / gui
+
+cli : 명령 줄 인터페이스
+
+gui : 그래픽 사용자 인터페이스
+
+상대경로 / 절대경로
+
+상대경로 : 현재 위치를 기준으로 / . 현재 위치에서 / .. 내 상위 위치
+
+start . : 현재 위치의 gui를 열어줘
+
+home 폴더 : 사용자 계정 위치의 경로
+
+ls : 존재하는 파일 알려줘
+
+ls -a : 숨겨진 것도 다 보여줘
+
+touch a.txt : a.txt라는 파일을 만들어줘
+
+touch b.txt c.txt :  b c 둘다 생김
+
+mkdir : 폴더생성 / 이름에 공백이 들어가려면 ‘multi campus’ 따옴표 안에
+
+mkdir test : test라는 폴더를 만들어줘
+
+cd test  : test 폴더로 들어가줘
+
+cd .. : 상위 폴더로 가줘
+
+rm a.txt : a.txt를 삭제해줘
+
+rm -r a : 폴더 a를 삭제해줘
+
+rm *.txt : .txt 확장자 파일 전부 삭제
+
+rm -rf * : 현재 폴더 자료 전부 삭제 !!!!절대 홈 폴더에서 사용 하지마세요!
+
+code . : vscode 실행
+
+til : 하루 공부 내용 깃에 올리는 운동?
+
+markdown 사용법
